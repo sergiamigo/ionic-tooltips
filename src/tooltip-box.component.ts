@@ -14,12 +14,12 @@ import { animate, trigger, style, state, transition } from '@angular/animations'
   styles: [
       `
           :host {
-              background-color: rgba(0,0,0,0.8);
-              color: white;
+              background-color: var(--tooltip-box-bg-color, rgba(0,0,0,0.8));
+              color: var(--tooltip-box-color, white);
               display: inline-block;
               position: fixed;
               padding: 15px 25px;
-              font-size: 15px;
+              font-size: var(--tooltip-box-font-size, 15px);
           }
     `,
       `
@@ -31,10 +31,10 @@ import { animate, trigger, style, state, transition } from '@angular/animations'
               height: 0;
           }
     `,
-    ':host.has-arrow.arrow-top:before { border-bottom: 5px solid rgba(0,0,0,0.8); top: -10px; }',
-    ':host.has-arrow.arrow-left:before { border-right: 5px solid rgba(0,0,0,0.8); left: -10px; }',
-    ':host.has-arrow.arrow-right:before { border-left: 5px solid rgba(0,0,0,0.8); right: -10px; }',
-    ':host.has-arrow.arrow-bottom:before { border-top: 5px solid rgba(0,0,0,0.8); bottom: -10px; }'
+    ':host.has-arrow.arrow-top:before { border-bottom: 5px solid var(--tooltip-box-arrow-bg-color, rgba(0,0,0,0.8)); top: -10px; left: 50%; transform: translateX(-50%);}',
+    ':host.has-arrow.arrow-left:before { border-right: 5px solid var(--tooltip-box-arrow-bg-color, rgba(0,0,0,0.8)); left: -10px; top: 50%; transform: translateY(-50%);}',
+    ':host.has-arrow.arrow-right:before { border-left: 5px solid var(--tooltip-box-arrow-bg-color, rgba(0,0,0,0.8)); right: -10px; top: 50%; transform: translateY(-50%);}',
+    ':host.has-arrow.arrow-bottom:before { border-top: 5px solid var(--tooltip-box-arrow-bg-color, rgba(0,0,0,0.8)); bottom: -10px; left: 50%; transform: translateX(-50%); }'
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })

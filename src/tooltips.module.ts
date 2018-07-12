@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { IonicModule } from 'ionic-angular';
 import { Tooltip } from './tooltip.directive';
 import { TooltipBox } from './tooltip-box.component';
-import { TestPage } from './tooltip.spec';
 
 @NgModule({
     entryComponents: [
@@ -11,7 +10,6 @@ import { TestPage } from './tooltip.spec';
     declarations: [
         Tooltip,
         TooltipBox,
-        TestPage
     ],
     imports: [
         IonicModule,

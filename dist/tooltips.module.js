@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { IonicModule } from 'ionic-angular';
 import { Tooltip } from './tooltip.directive';
 import { TooltipBox } from './tooltip-box.component';
-import { TestPage } from './tooltip.spec';
 var TooltipsModule = (function () {
     function TooltipsModule() {
     }
@@ -17,7 +16,6 @@ TooltipsModule.decorators = [
                 declarations: [
                     Tooltip,
                     TooltipBox,
-                    TestPage
                 ],
                 imports: [
                     IonicModule,
@@ -29,4 +27,3 @@ TooltipsModule.decorators = [
 ];
 /** @nocollapse */
 TooltipsModule.ctorParameters = function () { return []; };
-//# sourceMappingURL=tooltips.module.js.map

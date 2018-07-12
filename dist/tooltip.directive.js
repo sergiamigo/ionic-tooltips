@@ -227,4 +227,3 @@ Tooltip.propDecorators = {
     'onMouseEnter': [{ type: HostListener, args: ['mouseenter',] },],
     'onMouseLeave': [{ type: HostListener, args: ['mouseleave',] },],
 };
-//# sourceMappingURL=tooltip.directive.js.map

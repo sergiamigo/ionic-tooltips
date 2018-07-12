@@ -74,4 +74,3 @@ TooltipBox.propDecorators = {
     'posTop': [{ type: Input },],
     'posLeft': [{ type: Input },],
 };
-//# sourceMappingURL=tooltip-box.component.js.map

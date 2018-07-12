@@ -186,7 +186,7 @@ export class Tooltip implements AfterViewInit {
     } else if (this.navTooltip) {
       positionLeft = rect.left + el.offsetWidth / 2;
     } else {
-      positionLeft = rect.left;
+      positionLeft = (rect.left + el.offsetWidth / 2) - (tooltipNativeElement.offsetWidth / 2);
     }
 
     if (this.positionV === 'top') {
